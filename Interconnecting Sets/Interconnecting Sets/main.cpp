@@ -46,7 +46,6 @@ int main() {
             edge.push_back({a, b, v});
         }
         sort(edge.begin(), edge.end(), compare);
-        bool sign = true;
         int cnt = 0;
         for (int i = 0; i < M; i ++){
             if (unionSource(root[edge[i].a], root[edge[i].b])){
